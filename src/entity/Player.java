@@ -27,16 +27,16 @@ public class Player extends Entity{
         solidArea = new Rectangle();
         solidArea.x = 8;
         solidArea.y = 16;
-        solidArea.width = 32;
-        solidArea.height = 32;
+        solidArea.width = 8;
+        solidArea.height = 8;
         
         setDefaultValues();
         getPlayerImage();
     }
 
     public void setDefaultValues() {
-        worldX = 50 * 10;
-        worldY = 50 * 10;
+        worldX = gp.tileSize * 5;
+        worldY = gp.tileSize * 3;
         speed = 4;
 
         direction = "right";
